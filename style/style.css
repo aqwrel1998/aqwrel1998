@@ -1,0 +1,112 @@
+/*Меню*/
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+font-family: "newas";  
+src: url("../10853.otf"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+audio{
+	display: none;
+}
+
+.game-wrapp{
+	width: 100%;
+	height: 100vh;
+	background: url(../image/bg.jpg);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: relative;
+}
+.game-wrapp nav{
+	position: absolute;
+	right: 100px;
+	top: 200px;
+}
+
+.game-wrapp nav li {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+  padding: 25px 50px;
+  border-radius: 10px;
+  font-family: 'newas', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #c42f32 0%, #e24043 51%, #980002 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+.game-wrapp nav li:hover {background-position: right center;} 
+
+.setting{
+	position: absolute;
+	top: 200px;
+	left: 250px;
+	width: 500px;
+	height: 50vh;
+	background: #000;
+	padding: 20px;
+}
+.setting h2{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.setting li{
+	list-style: none;
+}
+.setting li a{
+  text-decoration: none;
+  outline: none;
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+  padding: 25px 50px;
+  border-radius: 10px;
+  font-family: 'newas', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #c42f32 0%, #e24043 51%, #980002 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+.setting li a:hover {background-position: right center;} 
+.setting span{
+	color: #fff;
+	font-weight: bold;
+	font-size: 35px;
+}
+.setting button{
+	background: none;
+	border:none;
+	margin-left: 150px;
+}
+
+.korpus > div, .korpus > input { display: none; color: #fff;}
+
+.korpus label { padding: 5px 33px; line-height: 28px; cursor: pointer; position: relative; bottom: 1px; background: #980002; color: #fff;}
+.korpus input[type="radio"]:checked + label { border-bottom: 2px solid #fff; }
+
+.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+.korpus > input:nth-of-type(4):checked ~ div:nth-of-type(4) { display: block; padding: 5px; border: 1px solid #aaa; }
+
+.obl-wrapp{
+  text-align: center;
+}
+.obl-wrapp img{
+  margin-top: 15px;
+  margin-left: 25px;
+}

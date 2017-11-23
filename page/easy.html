@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ 	<html lang="en">
+ 	<head>
+ 		<meta charset="UTF-8">
+ 		<title>Легко</title>
+ 		<link rel="stylesheet" href="../style/style.css">
+ 		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="../favicon.png" type="image/png">
+ 		
+ 	</head>
+ 	<body>
+ 		
+ 		<div class="game-wrapp">
+		  <div id ="text-wraper" style="display: none;">
+		  		<p><img src="galochka.png" alt="" width="100px" height="100px"></p>
+		  		<p>Успех!</p>
+		  		<p id="text"></p>
+		  		<p id="points"></p>
+		  		<p>
+		  			<input type="text" placeholder="Ваше имя" id="ez">
+		  		</p>
+
+		  		<p>
+		  			<button>Сохранить результат</button>
+		  		</p>
+		  </div>
+		  <p class="secondomer">Время <span id="seconds"> 00</span>:<span id="tens">00</span></p>
+		  <div id="clickme">0</div>
+		  <div id="container">
+
+		  </div>
+		</div>
+
+		<script src="game.js"></script>
+		<script>
+			gamer(8)
+		</script>
+ 	</body>
+ 	</html>	

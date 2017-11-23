@@ -1,0 +1,154 @@
+
+#container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+[data-view="card"] {
+  transform: rotateY(180deg);
+  width: 100px;
+  height: 140px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  background-color: red;
+  background-size: 64px 128px;
+}
+
+.flipped {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+.reverse {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+}
+
+.correct {
+  opacity: .5;
+  cursor: default;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+/* Icons */
+.correct[data-item="black"],
+.flipped[data-item="black"] {
+  background: url("../image/card/black.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="chaplin"],
+.flipped[data-item="chaplin"] {
+  background: url("../image/card/chaplin.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="fight"],
+.flipped[data-item="fight"] {
+  background: url("../image/card/fight.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="forest"],
+.flipped[data-item="forest"] {
+  background: url("../image/card/forest.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="future"],
+.flipped[data-item="future"] {
+  background: url("../image/card/future.png") left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="ganibal"],
+.flipped[data-item="ganibal"] {
+  background: url("../image/card/ganibal.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="kriminal"],
+.flipped[data-item="kriminal"] {
+  background: url("../image/card/kriminal.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="mafia"],
+.flipped[data-item="mafia"] {
+  background: url("../image/card/mafia.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="mask"],
+.flipped[data-item="mask"] {
+  background: url("../image/card/mask.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="pirats"],
+.flipped[data-item="pirats"] {
+  background: url("../image/card/pirats.png") left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="sparta"],
+.flipped[data-item="sparta"] {
+  background: url("../image/card/sparta.png") left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="terminator"],
+.flipped[data-item="terminator"] {
+  background: url("../image/card/terminator.png") left center no-repeat #fff;
+  background-size: contain;
+}
+.secondomer{
+  color: red;
+  float: right;
+  margin-right: 100px;
+  padding-top: 30px;
+}
+#clickme{
+  color: red;
+  float: right;
+  margin-right: 100px;
+  padding-top: 30px;
+}
+#text-wraper{
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  background: rgba(21%, 23%, 21%, 0.6);
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+#text-wraper input{
+  margin-top: 20px;
+  border: none;
+  border-bottom: 2px solid red;
+  padding: 5px 15px;
+}
+
+#text-wraper img{
+  margin-top: 150px;
+}
+#text-wraper button{
+  margin-top: 20px;
+  border: none;
+  padding: 5px 15px;
+  background: red;
+  color: #fff;
+}

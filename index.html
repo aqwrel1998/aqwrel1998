@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FindThePair</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body>
+	<div class="game-wrapp">
+		
+		<nav>
+			
+			<ul>
+				<li onclick="show('play')">Играть</li>
+				<li onclick="show('sett')">Настройки</li>
+				<li onclick="show('record')">Рекорды</li>
+				<li onclick="window.close()">Выход</li>
+			</ul>
+
+		</nav>
+		
+		<div class="setting" style="display: none; z-index: 1;" id="play">
+			
+			<h2>Выберите сложность</h2>
+
+			<ul>
+				<li><a href="page/veryeasy.html">Очень легко</a></li>
+				<li><a href="page/easy.html">Легко</a></li>
+				<li><a href="page/normal.html">Средне</a></li>
+				<li><a href="page/hard.html">Тяжело</a></li>
+			</ul>
+
+		</div>
+
+		<div class="setting" style="display: none; z-index: 1;" id="sett">
+			
+			<h2>Настройки</h2>
+			<br><br><br>
+			<span >Обложка:</span>
+			<p class="obl-wrapp">
+				<a href="#"> <img src="image/grey.png" alt="" onclick="localStorage.setItem('back', 'grey');"></a>
+				<a href="#"> <img src="image/red.png" alt="" onclick="localStorage.setItem('back', 'red');"></a>
+			</p>
+			
+			
+
+		</div>
+
+		<div class="setting" style="display: none; z-index: 1;" id="record">
+			
+			<h2>Рекорды</h2>
+			<div class="korpus">
+			  <input type="radio" name="odin" checked="checked" id="vkl1"/>
+			  <label for="vkl1">Очень легко</label>
+			  <input type="radio" name="odin" id="vkl2"/>
+			  <label for="vkl2">Легко</label>
+			  <input type="radio" name="odin" id="vkl3"/>
+			  <label for="vkl3">Средне</label>
+			  <input type="radio" name="odin" id="vkl4"/>
+			  <label for="vkl4">Тяжело</label>
+			  <div id="veryez"></div>
+			  <div id="easy"></div>
+			  <div id="norm"></div>
+			  <div id="hard"></div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<script>
+		function show(id) {
+
+		    var x = document.getElementById(id);
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		        x.style.zIndex += "1" 
+		    } else {
+		        x.style.display = "none";
+		    }
+		}
+	</script>
+	
+	<script>
+		localVery = localStorage.getItem('veryez');
+		LocalNameVery = localStorage.getItem('very');
+		document.getElementById("veryez").innerHTML = " " + LocalNameVery + " - " + localVery;
+
+		localEz = localStorage.getItem('easy');
+		LocalNameEz = localStorage.getItem('ez');
+		document.getElementById("easy").innerHTML = " " + LocalNameEz + " - " + localEz ;
+
+		localNorm = localStorage.getItem('norm');
+		LocalNameNormals = localStorage.getItem('normals');
+		document.getElementById("norm").innerHTML = " " + LocalNameNormals + " - " +localNorm;
+
+		localHard = localStorage.getItem('hard');
+		LocalNameHardy = localStorage.getItem('hardy');
+		document.getElementById("hard").innerHTML = " " + LocalNameHardy + " - " + localHard;
+	</script>
+
+</body>
+</html>
