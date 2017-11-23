@@ -21,7 +21,7 @@
 		  		</p>
 
 		  		<p>
-		  			<button>Сохранить результат</button>
+		  			<button onclick="location.href = '../index.html';">Сохранить результат</button>
 		  		</p>
 		  </div>
 		  <p class="secondomer">Время <span id="seconds"> 00</span>:<span id="tens">00</span></p>
@@ -34,6 +34,12 @@
 		<script src="game.js"></script>
 		<script>
 			gamer(12)
+		</script>
+		<script >
+			window.onload = function() {
+				document.querySelectorAll("[data-view='card']").forEach(el => el.style.backgroundImage = "" + localStorage.getItem('back'))
+			}
+
 		</script>
  	</body>
  	</html>	

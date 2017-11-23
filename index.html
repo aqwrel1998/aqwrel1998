@@ -15,7 +15,7 @@
 				<li onclick="show('play')">Играть</li>
 				<li onclick="show('sett')">Настройки</li>
 				<li onclick="show('record')">Рекорды</li>
-				<li onclick="window.close()">Выход</li>
+				<li onclick="window.close();">Выход</li>
 			</ul>
 
 		</nav>
@@ -36,11 +36,11 @@
 		<div class="setting" style="display: none; z-index: 1;" id="sett">
 			
 			<h2>Настройки</h2>
-			<br><br><br>
+			
 			<span >Обложка:</span>
 			<p class="obl-wrapp">
-				<a href="#"> <img src="image/grey.png" alt="" onclick="localStorage.setItem('back', 'grey');"></a>
-				<a href="#"> <img src="image/red.png" alt="" onclick="localStorage.setItem('back', 'red');"></a>
+				<a href="#"> <img src="image/card1.jpg" alt="" onclick="localStorage.setItem('back', 'url(../image/card1.jpg)');" width="100px" height="140px"></a>
+				<a href="#"> <img src="image/card2.jpg" alt="" onclick="localStorage.setItem('back', 'url(../image/card2.jpg)');" width="100px" height="140px"></a>
 			</p>
 			
 			

@@ -14,8 +14,10 @@
   float: left;
   margin: 10px;
   cursor: pointer;
-  background-color: red;
   background-size: 64px 128px;
+  background: url(card1.jpg);
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .flipped {
@@ -30,6 +32,7 @@
   transform-style: preserve-3d;
   position: relative;
   transform: rotateY(180deg);
+
 }
 
 .correct {
@@ -43,72 +46,84 @@
 /* Icons */
 .correct[data-item="black"],
 .flipped[data-item="black"] {
-  background: url("../image/card/black.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/black.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="chaplin"],
 .flipped[data-item="chaplin"] {
-  background: url("../image/card/chaplin.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/chaplin.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="fight"],
 .flipped[data-item="fight"] {
-  background: url("../image/card/fight.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/fight.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="forest"],
 .flipped[data-item="forest"] {
-  background: url("../image/card/forest.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/forest.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="future"],
 .flipped[data-item="future"] {
-  background: url("../image/card/future.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/future.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 .correct[data-item="ganibal"],
 .flipped[data-item="ganibal"] {
-  background: url("../image/card/ganibal.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/ganibal.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="kriminal"],
 .flipped[data-item="kriminal"] {
-  background: url("../image/card/kriminal.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/kriminal.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="mafia"],
 .flipped[data-item="mafia"] {
-  background: url("../image/card/mafia.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/mafia.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="mask"],
 .flipped[data-item="mask"] {
-  background: url("../image/card/mask.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/mask.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="pirats"],
 .flipped[data-item="pirats"] {
-  background: url("../image/card/pirats.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/pirats.png") left center no-repeat  #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 .correct[data-item="sparta"],
 .flipped[data-item="sparta"] {
-  background: url("../image/card/sparta.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/sparta.png") left center no-repeat #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 
 .correct[data-item="terminator"],
 .flipped[data-item="terminator"] {
-  background: url("../image/card/terminator.png") left center no-repeat #fff;
-  background-size: contain;
+  background: url("../image/card/terminator.png") left center no-repeat #fff !important;
+  z-index: 999;
+  background-size: contain !important;
 }
 .secondomer{
   color: red;

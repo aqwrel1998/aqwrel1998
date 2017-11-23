@@ -9,9 +9,6 @@ src: url("../10853.otf");
 font-style: normal; 
 font-weight: normal; 
 } 
-audio{
-	display: none;
-}
 
 .game-wrapp{
 	width: 100%;
